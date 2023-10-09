@@ -1,0 +1,161 @@
+<!-- DTD Document Type Declaration -->
+<!DOCTYPE html>
+
+<!-- Dont forget to add the language attribute! -->
+<html lang = "en">
+
+<!-- HTML HEAD SECTION -->
+<head>
+
+	<!-- Linking our style sheet relatively -->
+	<link rel = "stylesheet" type="text/css" href="styles.css">
+
+	<!-- Our Website Title -->
+	<title>Pacific Trails Resort :: Reservations</title>
+
+	<!-- UTF-8 Character Set -->
+	<meta charset = "utf-8">
+	
+	<!-- Viewport meta tag for Mobile Displays -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- The description meta tag content is displayed on the SERP by some search engines, such as Google. 
+	The name attribute indicates the use of the meta tag. The content attribute indicates the values needed for that specific use. 
+	The ­description value for the name attribute indicates that the use of the meta tag is to provide a description. -->
+	<meta name="description" content="Pacific Trails Resort on the California North Coast offers panoramic views of the
+	Pacific Ocean, sumptuously appointed private yurts, and a opulent camping adventure!">
+
+	<!-- Accessing the jQuery from Google CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script>
+
+	<!-- JavaScript goes here -->
+	<script>
+
+	// Function to validate the phone number
+	function validatePhoneNumber(phoneNumber) {
+
+		/* Variable holding a JavaScript RegEx (Regular Expression). The
+		'^' and '$' are the start and end anchors, ensuring that the whole
+		string matches the pattern. '\d' matches any digit (0-9), {3}
+		specifies that the preceding digit pattern should occur exactly
+		three times. - matches the hyphens between two groups of three digits,
+		with the last one being 4 digits. The expression is enclosed in / and / */
+		var phoneNumberPattern = /^\d{3}-\d{3}-\d{4}$/;
+
+		/* The built in JavaScript test() method executes a search for a match
+		between a regular expression (regex above), and a specified string. If there
+		is a match, return true. We use the phoneNumberPatter for this. We
+		then select the first form object (forms[0]) in the document object,
+		checking the value of the input with the id "myPhone"*/
+		if (phoneNumberPattern.test(document.forms[0].myPhone.value)) {
+
+  			return true;
+
+		} else {
+
+  			alert("Invalid phone number. Please use the format 'xxx-xxx-xxxx'.");
+  			return false;
+
+		}
+	}
+
+	</script>
+	
+</head>
+
+<!-- HTML BODY SECTION -->
+<body>
+
+
+	<!-- Pacific Trails Resort Header -->
+	<header>
+	
+		<!-- Configuring our h1 header element to be a link
+		back to the homepage -->
+		<a href = "index.html"><h1>Pacific Trails Resort</h1></a>
+		
+	</header>
+	
+	<!-- Website Navigation -->
+	<nav>
+		<ul>
+			<li><a href = "index.html">Home</a></li>
+			<li><a href = "yurts.html">Yurts</a></li>
+			<li><a href = "activities.html">Activities</a></li>
+			<li><a href = "reservations.html">Reservations</a></li>
+			<li><a href = "shop.html">Shop</a></li>
+		</ul>
+	</nav>
+	
+	<div id = "wrapper">
+	
+		<!-- "reshero" div for our website image -->
+		<div id = "reshero">
+		</div>
+	
+		<!-- Pacific Trails Resort Main Content -->
+		<main>
+	
+			<h2>Reservations at Pacific Trails</h2>
+			<h3>Contact Us:</h3>
+			<p>Required fields are marked with an asterisk *</p>
+			
+			<!-- Creating a HTML Form for the reservation entry:
+			
+			* The post method is more private than get, and is preferred by W3C
+			
+			* action Indicates where to send the information to a server-side 
+			processing script
+			
+			-->
+			
+			<!-- I got this finally aligned rightttttt :)))))))))), on submit go to the JavaScript validatePhoneNumber Function -->
+			<form method="post" action="https://webdevbasics.net/scripts/pacific.php" onsubmit="return validatePhoneNumber();">
+	
+				<label for="myFName">*First Name:</label>
+				<input type="text" name="myFName" id="myFName" required = "required">
+				<label for="myLName">*Last Name:</label>
+				<input type="text" name="myLName" id="myLName" required = "required">
+				<label for="mailAddress">*Mailing Address:</label>
+				<input type="text" name="mailAddress" id="mailAddress" required = "required">
+				<label for="myEmail">*E-mail:</label>
+				<input type="text" name="myEmail" id="myEmail" required = "required">
+				<label for="myPhone">Phone:</label>
+				<input type="text" name="myPhone" id="myPhone">
+				<label for="myDate">Arrival Date:</label>
+				<input type="date" name="myDate" id="myDate">
+				<label for="myDepartDate">Departure Date:</label>
+				<input type="date" name="myDate" id="myDepartDate">
+				<label for="myNights">Nights:</label>
+				<input type="number" name="myChoice" id="myNights" min="1" max="14">
+				<label for="myComments">*Comments:</label>
+				<textarea name="myComments" id="myComments" cols="20" rows="2" required = "required">Enter your comments here</textarea>
+				<input type="submit" name="mySubmit" id="mySubmit">
+				
+			</form>
+		
+	
+		</main>
+	
+		<!-- Pacific Trails Resort Footer Content -->
+		<footer>
+		
+		
+			<p>
+				<i>
+				<small>
+					Copyright &copy; 2023 Pacific Trails Resort
+					<br> 
+					<a href="mailto:tmorgan129@ivytech.edu">tmorgan129@ivytech.edu</a>
+				</small>
+				</i>
+			</p>
+		
+		</footer>
+	
+	</div>
+	
+</body>
+
+</html>

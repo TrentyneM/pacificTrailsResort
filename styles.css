@@ -1,0 +1,503 @@
+/* 
+Global Styles for the Documents:
+index.html - yurts.html - actvities.html - error.html
+ */
+ 
+ nav a:link{color: #5C7FA3;}	 	/* CSS Pseudo-Class for Unvisited Links in nav */
+ nav a:visited{color: #344873;}  	/* CSS Pseudo-Class for Visited Links in nav */
+ nav a:hover{color: #A52A2A;}	 	/* CSS Psudeo-Class for Hovered Links in nav */
+ header a:link{color: #FFFFFF;}	    /* CSS Psudeo-Class for Unvisited Links in header */
+ header a:visited{color: #FFFFFF;}  /* CSS Psudeo-Class for Visited Links in the header */
+ header a:hover{color: #90C7E3;}    /* CSS Psudeo-Class for Hovered Links in the header */
+ 
+ /* Psudeo-class to apply background color to all even
+ table rows using :nth-of-type(even) */
+ tr:nth-of-type(even){background-color: #DFEDF8;}
+ 
+ /* Using a standard decendant to configure the header to have */
+ header a{
+	
+	text-decoration: none;
+	
+ }
+
+ /* The asterisk is used as the universal
+ element selector, targeting all HTML elements on the page */
+ * {
+ 
+	/* The border-box property clips the display to the area behind the content,
+	padding, and border; similar to the padding-box property except that the image will display
+	behind a border. */
+	box-sizing: border-box;
+ 
+ }
+ 
+/* Styles for the body element */
+body {
+
+	margin: 0;
+	
+	/* Color changes the text color remember */
+	color: #666666;
+	font-family: verdana, arial;
+}
+
+/* Styles for Main Element */
+main {
+	
+	/* Remember the padding property configures empty space between the content
+	of the HTML element (usually text) and the border. */
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0;
+	padding-bottom: 0;
+	
+	/* The CSS display property configures how the browser renders, or displays an element
+	on a webpage.*/
+	display: block;
+
+}
+
+/* Styles for the Pacific Trails Resort Header */
+header {
+
+	background-color: #002171;
+	color: #FFFFFF;
+	font-family: georgia;
+	padding: 1em;
+}
+
+/* Styles for H1 elements */
+h1 {
+
+	text-align: center;
+	font-size: 1.5em;
+	
+}
+
+/* Styles for Webpage Navigation */
+nav {
+
+	font-size: 1.2em;
+	text-align: center;
+	background-color: #FFFFFF;
+	background-clip: border-box;
+}
+
+ /* Styles for the navgation list selector */
+ nav li{
+	
+	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-right: 1em;
+	padding-left: 1em;
+	border-style: solid;
+	border-bottom: 1px;
+	background-color: white;
+	
+ }
+ 
+  /* A Descendent selector creates a style rule where the elements are chosen based on where they
+ are in the hierarchy of the page. (You want to create a UL list style rule inside of a nav container). */
+ nav ul {
+ 
+	text-decoration: none;
+ 
+	/* Setting this as a flex box container */
+	display: flex;
+	flex-direction: column;
+ 
+	/* Removing the bullets from the ul element */
+	list-style-type: none;
+	
+	margin: 0;
+	padding-left: 0;
+
+ }
+ 
+
+/* Styles for the H2 element */
+h2 {
+
+	color: #1976D2;
+	font-family: georgia;
+}
+
+/* Styles for the H3 element */
+h3 {
+	
+	font-family: georgia;
+}
+
+/* Styles for the dt element on the Yurts page */
+dt {
+	
+	color: #002171;
+	font-weight: bold;
+}
+
+/* Style rules for the section element selector on the yurts page */
+section {
+
+	overflow: auto;
+	padding-left: .5em;
+	padding-right: .5em;
+	
+}
+
+/* Style rule to prevent the hyperlinks in the nav area
+from displaying the default underline.*/
+nav a {
+
+	text-decoration: none;
+}
+
+/* Styles for the Footer Element */
+footer {
+
+	text-align: center;
+	font-style: italic;
+	padding: 1em 1em 1em 1em;
+	background-color: #FFFFFF;
+}
+
+/* Styles for our table element */
+table{
+	
+	/* Remember, HTML attributes to align the table
+	such as align are obsolete in HTML5, we can center it
+	using the margin-left and margin-right properties 
+	center the text*/
+	margin-left: auto;
+	margin-right: auto;
+	
+	/* Configuring the table borders */
+	border-style: solid;
+	border-width: 1px;
+	border-color: #3399CC;
+	width: 90%;
+	
+	/* border-collapse removes the extra space between the table
+	and table cell borders */
+	border-collapse: collapse;
+}
+
+/* Styles for the table data and table header
+elements <td> <th> */
+td, th{
+	
+	padding: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #3399CC;
+	
+}
+
+/* Centering our table data content <td> */
+td {
+	
+	text-align: center;
+	
+}
+
+/* Styles for HTML Forms */
+form {
+	
+	/* Remember, to configure a flexbox layout we need
+	to set a flex container with display: flex. We can then change
+	the flex direction using flex-direction */
+	display: flex;
+	flex-flow: column nowrap;
+	padding-left: 1em; 
+	width: 80%;
+}
+
+/* Styles for <input> and <textarea> element selector */
+input, textarea {
+	
+	margin-bottom: .5em;
+}
+
+/* Styles for Video Element Selector */
+video {
+
+	float: right;
+	margin: 2em;
+	
+}
+
+/* Styles for the text class, remember id selectors and classes are
+different in the aspect that an ID is only used to identify one
+single element in our HTML code, while a class can be used
+to identify more than one HTML element. */
+.text {
+	
+	text-align: left;
+	
+}
+
+/*
+Style for the "resort" CSS class we defined in index.html
+REMEMBER TO PUT THE . AT THE BEGINNING OF CLASSES YOU USED <span> WITH
+IN YOUR HTML DOCUMENTS.
+*/
+.resort {
+
+	color: #1976D2;
+	font-size: 1.2em;
+}
+
+/* Style rule for a class named shop */
+.shop {
+
+	margin: 1em;
+	background-color: #F4F4F4;
+
+}
+
+/* Style rule for images in a class named shop */
+.shop img {
+
+	float: right;
+	padding: 1em;
+	clear: right;
+
+}
+
+/* Style rule for form elements within a class named shop */
+.shop form {
+
+	clear: right;
+
+}
+
+/* Style rule for mobile id selector */
+#mobile {
+
+	display: inline;
+	
+
+}
+
+/* Desktop id selector */
+#desktop {
+
+	display: none;
+
+}
+
+/* Style rule for our div id we defined in yurts.html called "wrapper" 
+Dont forget that div id's use a "#" instead of "."*/
+#wrapper {
+
+	background-color: #FFFFFF;
+	background-repeat: no-repeat;
+	margin: auto;
+	
+}
+
+/* Style rule for an id named shophero */
+#shophero {
+	min-height: 300px;
+	background-image: url("pacific/psunset.jpg");
+	background-position: center;
+	background-size: 200% 100%;
+	background-repeat: no-repeat;
+}
+
+/* Style rule for an id named reshero */
+#reshero {
+	min-height: 300px;
+	background-image: url("pacific/ocean.jpg");
+	background-position: center;
+	background-size: 200% 100%;
+	background-repeat: no-repeat;
+}
+
+/* Style rule for an id named homehero */
+#homehero {
+	min-height: 300px;
+	background-image: url("pacific/coast.jpg");
+	background-position: center;
+	background-size: 200% 100%;
+	background-repeat: no-repeat;
+}
+
+/* Style rule for an id named yurthero */
+#yurthero {
+	min-height: 300px;
+	background-image: url("pacific/yurt.jpg");
+	background-position: center;
+	background-size: 200% 100%;
+	background-repeat: no-repeat;
+}
+
+/* Style rule for an id named trailhero */
+#trailhero {
+	min-height: 300px;
+	background-image: url("pacific/trail.jpg");
+	background-position: center;
+	background-size: 200% 100%;
+	background-repeat: no-repeat;
+}
+
+/* Here we configure a media query that triggers when the minimum width
+is 600px or greater, and within this media query, the following styles take place. */
+@media (min-width: 600px){
+	
+	/* Styles for 600px or wider header 1 element */
+	h1{
+		font-size: 2em;
+		letter-spacing: .25em;
+	}
+	
+	/* Styles for 600px or wider Navigation
+	Unordered List selector */
+	nav ul{
+		
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		justify-content: space-around;
+		padding-right: 2em;
+	}
+	
+	/* Styles for the 600px or wider Navigation
+	List Item selector */
+	nav li{
+		
+		width: 12em;
+		border-style: none;
+	}
+	
+	/* Styles for the 600px or wider section element
+	selector */
+	section{
+		
+		padding-left: 2em;
+		padding-right: 2em;
+		
+	}
+	
+	/* Styles for the 600px or wider form element
+	selector */
+	form {
+		
+		display: grid;
+		grid-template-columns: 10em 1fr;
+		grid-gap: 1em; grid-gap: 1em;
+		column-gap: 3em;
+		width: 60%;
+	}
+	
+	/* Styles for 600px or wider submit button element
+	selector */
+	input[type="submit"]{
+		
+		/* Putting the submit button in the second column */
+		grid-column: 2 / 2;
+		width: 10em;
+		margin-left: 0;
+	}
+	
+	/* Putting labels in the first column of the grid */
+	label {
+		
+		grid-column: 1 / 2;
+		
+	}
+	
+	/* Styles for 600px or wider textarea element selector */
+	textarea {
+		
+		grid-column: 2 / 2;
+	}
+	
+	/* Styles for 600px or wider input element selector */
+	input{
+		
+		grid-column: 2 / 2;
+		
+	}
+	
+	/* Styles for the 600px or wider myNights form id selector */
+	#myNights{
+		width: 12em;
+	}
+	
+	/* Styles for the 600px or wider reshero ID selector */
+	#reshero{
+		
+		background-size: 100% 100%;
+
+	}
+	
+	/* Styles for the 600px or wider Flow ID selector */
+	#flow{
+		
+		display: flex;
+		flex-direction: row;
+	}
+	
+	/* Styles for 600px or greater mobile id selector */
+	#mobile{
+		
+		display: none;
+		
+	}
+	
+	/* Styles for 600px or greater desktop id selector */
+	#desktop{
+		
+		display: inline;
+		
+	}
+	
+	/* Styles for 600 px or greater homehero id selector */
+	#shophero{
+		background-size: 100% 100%;
+	}
+
+	/* Styles for 600 px or greater homehero id selector */
+	#homehero{
+		background-size: 100% 100%;
+	}
+	
+	/* Styles for 600 px or greater yurthero id selector */
+	#yurthero{
+		background-size: 100% 100%;
+	}
+	
+	/* Styles for 600 px or greater trailhero id selector */
+	#trailhero{
+		background-size: 100% 100%;
+	}
+	
+}
+
+/* Here we configure a media query that triggers when the minimum width
+is 1024px or greater, and within this media query, the following styles take place. */
+@media (min-width: 1024px){
+	
+	/* Styles for 1024 px or greater body element */
+	body{
+		
+		background-image: linear-gradient(to bottom, #FFFFFF 20%, #90C7E3 60%, #FFFFFF 100%);
+	}
+	
+	/* Styles for 1024 px or greater navigation unordered list
+	selector */
+	nav ul{
+		
+		padding-left: 10%;
+		padding-right: 10%;
+		
+	}
+	
+	/* Styles for 1024px or greater #wrapper id selector */
+	#wrapper{
+		margin: auto;
+		width: 80%;
+	}
+	
+}

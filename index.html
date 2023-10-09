@@ -1,0 +1,120 @@
+<!-- DTD Document Type Declaration -->
+<!DOCTYPE html>
+
+<!-- Dont forget to add the language attribute! -->
+<html lang = "en">
+
+<!-- HTML HEAD SECTION -->
+<head>
+
+	<!-- Linking our style sheet relatively -->
+	<link rel = "stylesheet" type="text/css" href="styles.css">
+
+	<!-- Our Website Title -->
+	<title>Pacific Trails Resort :: Home</title>
+
+	<!-- UTF-8 Character Set -->
+	<meta charset = "utf-8">
+	
+	<!-- Viewport meta tag for Mobile Displays -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- The description meta tag content is displayed on the SERP by some search engines, such as Google. 
+	The name attribute indicates the use of the meta tag. The content attribute indicates the values needed for that specific use. 
+	The ­description value for the name attribute indicates that the use of the meta tag is to provide a description. -->
+	<meta name="description" content="Pacific Trails Resort on the California North Coast offers panoramic views of the
+	Pacific Ocean, sumptuously appointed private yurts, and a opulent camping adventure!">
+	
+</head>
+
+<!-- HTML BODY SECTION -->
+<body>
+
+	<!-- Pacific Trails Resort Header -->
+	<header>
+	
+		<!-- Configuring our h1 header element to be a link
+		back to the homepage -->
+		<a href = "index.html"><h1>Pacific Trails Resort</h1></a>
+		
+	</header>
+	
+	<!-- Website Navigation -->
+	<nav>
+		<ul>
+			<li><a href = "index.html">Home</a></li>
+			<li><a href = "yurts.html">Yurts</a></li>
+			<li><a href = "activities.html">Activities</a></li>
+			<li><a href = "reservations.html">Reservations</a></li>
+			<li><a href = "shop.html">Shop</a></li>
+		</ul>
+	</nav>
+	
+	<div id = "wrapper">
+	
+		<!-- "homehero" div for our website image -->
+		<div id = "homehero">
+		</div>
+	
+		<!-- Pacific Trails Resort Main Content -->
+		<main>
+	
+			<h2>Enjoy Nature in Luxury</h2>
+
+			<!-- Our video element -->
+			<video controls = "controls" poster = "pacific/pacific.jpg" width = "320" height = "240">
+				<source src = "pacific/pacific.mp4" type = "video/mp4">
+				<source src = "pacific/pacific.ogv" type = "video/ogv">
+				<a href = "pacific/pacific.mp4">Pacific Trails Resort</a>
+			</video>
+		
+			<!-- You can use span to contain things within a "class", then later use ".classname" in 
+			your styles.css files to give it attributes and properties -->
+			<p> <span class = "resort">Pacific Trails Resort</span> on the California North Coast offers panoramic views of 
+			the <br> Pacific Ocean. Our guests experience an opulent camping adventure in sumptuously <br> 
+			appointed private yurts featuring a gas fireplace, king-size bed, and private deck.</p>
+		
+			<ul>
+			<li>Unwind in the heated outdoor pool and whirlpool</li>
+			<li>Explore the coast on your own or join our guided tours</li>
+			<li>Start the day with a complementary cooked-to-order breakfast</li>
+			<li>Relax in our lodge while enjoying complementary apptizers and beverages</li>
+			<li>Savor nightly fine dining with an ocean view</li>
+			</ul>
+		
+			<!-- Pacific Trails Resort Contact Info (div) -->
+			<div>
+	
+				<p><span class = "resort">Pacific Trails Resort</span><br>12456 Pacific Trails Road<br>Zephyr, CA 95555</p>
+				<a id="mobile" href="tel:888-555-5555">888-555-5555</a>
+				<span id = "desktop">888-555-5555</span>
+	
+			</div>
+	
+		</main>
+	
+		<!-- Pacific Trails Resort Footer Content -->
+		<footer>
+		
+		
+			<p>
+				<i>
+				<small>
+					Copyright &copy; 2023 Pacific Trails Resort
+					<br> 
+					<a href="mailto:tmorgan129@ivytech.edu">tmorgan129@ivytech.edu</a>
+				</small>
+				</i>
+			</p>
+
+			<div>
+				<p>This Page was Last Modified on: <script>document.write(document.lastModified);</script></p>
+			</div>
+		
+		</footer>
+	
+	</div>
+	
+</body>
+
+</html>
